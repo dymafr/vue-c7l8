@@ -9,7 +9,7 @@
 import { onMounted, reactive, ref } from 'vue';
 import Blog from './Blog.vue';
 
-const titles = ref(['Un titre', 'Un autre titre']);
+const titles = ref(['Un titre', 'Un autre titre', 'Encore un dernier titre']);
 
 const toggle = ref(true);
 </script>
