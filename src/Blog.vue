@@ -1,15 +1,9 @@
 <template>
-  <h2>Blog</h2>
+  <h2>{{ title }}</h2>
 </template>
 
 <script lang="ts" setup>
-import { reactive, ref, type Ref } from 'vue';
+import { ref } from 'vue';
 
-const count = ref(15);
-const arrTest = reactive([1,2,3]);
-function display() {
-    console.log('Display')
-}
-
-defineExpose<{count: Ref<number>, arrTest: number[], display: () => void}>({count, arrTest, display})
+defineProps<{ title: string }>();
 </script>
